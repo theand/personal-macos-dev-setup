@@ -8,18 +8,9 @@ echo "Installing strap (Homebrew ecosystem)"
 cd ~
 git clone https://github.com/MikeMcQuaid/strap
 cd strap
-bash bin/strap.sh
+source bin/strap.sh
 
 echo "Cloning personal dotfiles"
 cd ~
 git clone https://github.com/theand/mathiasdotfiles
-cd ~
 
-
-
-#TODO brew bundle
-#TODO dotfile
-#TODO dropbox
-#TODO mackup
-
-#pip3 install --upgrade pip setuptools wheel

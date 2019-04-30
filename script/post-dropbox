@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+#After dropbox placed
+mackup restore
+
+#Syncing another dotfiles
+#dotfiles=(
+#.agignore
+#.bash_history
+#.bash_p
+#)
+
+#pip3 install --upgrade pip setuptools wheel

@@ -1,18 +1,27 @@
 #!/bin/sh
 
-## grabbed from https://github.com/donnemartin/dev-setup/blob/master/osxprep.sh
-## start
-# Keep-alive: update existing `sudo` time stamp until `bootstrap` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 
-echo "Updating OSX. If this requires a restart, run the script again."
-# Install all available updates
-sudo softwareupdate -ia --restart --verbose
+set -e
 
-echo "Installing Xcode Command Line Tools."
-xcode-select --install
-## end
+##comment out due to duplicated with strap.sh
+### grabbed from https://github.com/donnemartin/dev-setup/blob/master/osxprep.sh
+### start
+## Keep-alive: update existing `sudo` time stamp until `bootstrap` has finished
+#while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+#
+#
+#echo "Updating OSX. If this requires a restart, run the script again."
+## Install all available updates
+#sudo softwareupdate -ia --restart --verbose
+#
+#echo "Installing Xcode Command Line Tools."
+#xcode-select --install
+### end
+#
+
+
+
 
 ## grabbed from https://github.com/bkuhlmann/mac_os-config/blob/master/bin/apply_basic_settings
 ## start
@@ -23,7 +32,6 @@ if [[ -z "$mac_os_name" ]]; then
   printf "ERROR: Invalid MacOS name.\n"
   exit 1
 fi
-
 
 printf "Setting system name...\n"
 sudo scutil --set ComputerName $mac_os_name

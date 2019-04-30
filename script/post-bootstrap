@@ -1,0 +1,16 @@
+#!/bin/sh
+
+
+set -e
+
+
+#brew bundle
+#run manually multiple time to install all bundle
+cd ~/mathiasdotfiles
+source brew.sh
+
+cd ~/mathiasdotfiles
+source post-brew.sh
+
+cd ~/mathiasdotfiles
+source .macos
