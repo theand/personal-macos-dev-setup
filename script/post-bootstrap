@@ -7,10 +7,10 @@ set -e
 #brew bundle
 #run manually multiple time to install all bundle
 cd ~/mathiasdotfiles
-source brew.sh
+sh brew.sh
 
 cd ~/mathiasdotfiles
-source post-brew.sh
+sh post-brew.sh
 
 cd ~/mathiasdotfiles
-source .macos
+sh .macos

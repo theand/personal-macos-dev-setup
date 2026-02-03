@@ -8,7 +8,7 @@ echo "Installing strap (Homebrew ecosystem)"
 cd ~
 git clone https://github.com/MikeMcQuaid/strap
 cd strap
-source bin/strap.sh
+sh strap.sh
 
 echo "Cloning personal dotfiles"
 cd ~
